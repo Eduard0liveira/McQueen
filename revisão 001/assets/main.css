@@ -1,0 +1,36 @@
+header,
+main {
+  margin: 0 auto;
+  width: 80vw;
+  border: 1px solid green;
+}
+
+header {
+  border: 1px solid red;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+header>input {
+  flex-grow: 2;
+}
+
+header>button {
+  flex-grow: 1;
+}
+
+main>div {
+  display: flex;
+}
+
+main>div>span {
+  flex-grow: 1;
+}
+
+.titulo {
+  text-decoration: none;
+}
+
+.titulo-riscado {
+  text-decoration: line-through;
+}

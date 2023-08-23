@@ -1,0 +1,42 @@
+[
+  {
+    "pergunta": "Qual é o nome do carro principal do filme carros?",
+    "alternativas": ["Claudio", "DOC", "Maicon", "McQueen", "Evandro", "Adilson", "Cleitinho", "Mate", "Tomas"],
+    "resposta": 3
+  },
+  {
+    "pergunta": "Quantos filmes dos Carros existem?",
+    "alternativas": [0, 1, 2, 4, 3, 7, 8, 9, 40, 10],
+    "resposta": 4
+  },
+  {
+    "pergunta": "Quantas rodas McQueen?",
+    "alternativas": [1, 10, 9, 7, 11, 5, 4, 20, 2, 3],
+    "resposta": 6
+  },
+  {
+    "pergunta": "Qual é a cor do McQueen?",
+    "alternativas": ["Verde", "Vermelho", "Amarelo", "Roxo", "Azul", "Marrom", "Preto", "Cinza", "Laranja", "Lilas"],
+    "resposta": 1
+  },
+  {
+    "pergunta": "Quantas copas pistão McQueen tem?",
+    "alternativas": [9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    "resposta": 2
+  },
+  {
+    "pergunta": "Quantos retrovisores McQueen tem?",
+    "alternativas": [5, 4, 3, 2, 1, 0, 6, 7, 8, 9],
+    "resposta": 5
+  },
+  {
+    "pergunta": "Qual é o número do McQueen?",
+    "alternativas": [11, 22, 33, 45, 65, 75, 85, 95, 99, 66],
+    "resposta": 7
+  },
+  {
+    "pergunta": "Qual é o apelido de McQueen",
+    "alternativas": ["Raio", "Trovão", "Ar", "Fogo", "Trovoada", "Irresistivel", "Papelão", "não tem", "Relampago", "Eduzin"],
+    "resposta": 8
+  }
+]

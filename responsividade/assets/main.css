@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("mcqueen.gif");
+  background-size: cover;
+  background-color: red;
+  height: 50vh;
+}
+
+header .content {
+  padding: 2rem;
+  padding-top: 10rem;
+  width: 50rem;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+header nav {
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  left: 0;
+  background-color: rgba(0 0 0 / .3);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  transition: .3s;
+}
+
+header nav.scrolled {
+  background-color: rgba(0 0 0 / 1);
+}
+
+header nav>div {
+  display: flex;
+  align-items: center;
+}
+
+header nav div.menu {
+  margin-left: 1rem;
+  display: flex;
+  gap: .25rem;
+}
+
+header nav div.menu a {
+  text-decoration: none;
+  color: aliceblue;
+  background: black;
+  padding: .5rem;
+  border-radius: 4px;
+  transition: .3s;
+}
+
+header nav div.menu a:hover {
+  transform: translateY(-5px);
+  background: #333333;
+  box-shadow: 0px 4px 4px -3px red;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+main {
+  min-height: 200px;
+  padding: 5rem 1rem;
+  min-height: 100vh;
+  /* refatora */
+}
+
+main section {
+  background-color: lightblue;
+  margin: 10px;
+}
+
+main section div {
+  background-color: lightseagreen;
+  padding: 10px;
+  min-height: 10px;
+}
+
+main section div div {
+  background-color: lightcoral;
+  min-height: 10px;
+}
+
+.katchau .logo {
+  height: 133px;
+}
+
+/* --✀------------------------------------------------------------- */
+/* GALERIA DE FOTOS */
+
+.galeria-fotos {
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.galeria-fotos img {
+  width: 100%;
+  transition: .3s;
+  object-fit: cover;
+  height: 200px;
+}
+
+.galeria-fotos:hover img:not(:hover) {
+  transform: scale(.8);
+}
+
+.galeria-fotos> :nth-child(1) {
+  /* grid-column-start: 1;
+  grid-column-end: 3;
+  
+  grid-row-start: 1;
+  grid-row-end: 3; */
+
+  grid-column: span 2;
+  grid-row: span 2;
+
+  height: 400px;
+}
+
+.galeria-fotos> :nth-child(4) {
+  grid-column: span 2;
+}
+
+/* --✀------------------------------------------------------------- */
+/* MODAL GALERIA DE FOTOS */
+
+div.modal-galeria {
+  background-color: rgba(0, 0, 0, .8);
+  position: fixed;
+  z-index: 99999;
+  /* 
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; 
+  */
+  inset: 0;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+div.modal-galeria.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+div.modal-galeria div.conteudo {
+  width: 80%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, .1);
+}
+
+div.modal-galeria .bt-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+div .conteudo {
+  display: grid;
+  place-items: center;
+  width: 500;
+}
+
+div .conteudo img {
+  max-height: 100%;
+}
